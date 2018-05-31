@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="canonical" href="https://ziransun.github.io/holidayApp/"/>
+    <link rel="stylesheet" type="text/css" href="css/holidayhome.css" />
+    <!-- TODO add manifest here -->
+</head>
+<body>
+    <div id="div_main_page_content">
+        
+        <div id="div_main_page_title">
+            <img id="img_main_title" src="assets/hometitle.png">
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="div_main_page_buttons">
+            <center>
+               <table>
+                    <div class="container">
+                            <div class="card cardTemplate weather-forecast" hidden>
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required> <br>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+                          
+                        <!-- <button type="submit" onclick="requestToken()">Get Token</button><br><br><br><br><br> -->
+
+                        <button id="requestToken" class="button">Get Token</button>
+
+                        <br>
+                        </div>
+            
+                </table>
+            </center>
+        </div>
+    </div>
+
+    <div class="loader">
+            <svg viewBox="0 0 32 32" width="32" height="32">
+              <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+          </div>
+          
+</body>
+
+<!--<script>
+        function requestToken() {
+            window.open('http://localhost:31338/auth');
+            window.open(window.location, '_self', '');
+            window.close();
+        }
+ 
+        </script> -->
+</html>
